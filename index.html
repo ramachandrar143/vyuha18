@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/p5.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/addons/p5.dom.min.js"></script>
+  <script src="sketch.js"></script>
+  <style>
+    body {
+      background: black;
+      padding: 0;
+      margin: 0;
+      color: white;
+    }
+
+    #logo {
+      margin-top: -50px;
+      background: url('a.jpg');
+      height: 200;
+    }
+
+    #line {
+      width: 20%;
+      color: #000;
+    }
+
+    #welcome {
+      font-size: 55px;
+      font-family: 'PT Serif', serif;
+    }
+
+    #subtitle {
+      font-family: 'Courgette', cursive;
+      font-size: 32px;
+    }
+
+    .submit {
+      background-color: rgb(65, 91, 175);
+      border: none;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 20px;
+      margin: 4px 2px;
+      border-radius: 50%;
+    }
+
+    .button {
+      background-color: #4CAF50;
+      /* Green */
+      border: none;
+      color: white;
+      padding: 16px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      -webkit-transition-duration: 0.4s;
+      /* Safari */
+      transition-duration: 0.4s;
+      cursor: pointer;
+    }
+
+    .button1 {
+      background-color: transparent;
+      color: white;
+      border: 2px solid white;
+    }
+
+    .button1:hover {
+      background-color: white;
+      color: black;
+    }
+  </style>
+</head>
+
+<body>
+  <span class="col-sm-3"></span>
+  <div class="col-sm-6">
+    <span class="row"></span>
+    <center>
+      <p id="welcome">Miracle School Of Management
+        <br> Presents </p>
+      <br>
+      <img src="images/a.png" height="150" width="100%" id="logo">
+
+      <hr id="line">
+      <p id="subtitle"> A national level management meet
+        <br>28
+        <sup>th</sup> Feb - 2k18
+      </p>
+      <div style="display:inline;">
+
+        <button onclick="window.location='public/main.html'" class="button button1">Learn More</button>
+        <button onclick="window.location='public/regi.html'" class="button button1">Register Now</button>
+
+      </div>
+    </center>
+  </div>
+  <span class="col-sm-3"></span>
+</body>
+
+</html>
