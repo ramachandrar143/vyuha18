@@ -8,7 +8,7 @@ function windowResized() {
 function setup() {
     canvas = createCanvas(windowWidth, windowHeight);
     canvas.position(0, 0);
-    canvas.style('z-index', '-1');
+    canvas.style('z-index', '-2');
     for (var i = 0; i < 50; i++) {
         l[i] = new lin(random(0, windowWidth), random(0, windowHeight), 3, random(0, 1));
     }

@@ -4,7 +4,6 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/p5.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/addons/p5.dom.min.js"></script>
   <script src="sketch.js"></script>
@@ -19,12 +18,12 @@
     #logo {
       margin-top: -50px;
       background: url('a.jpg');
-      height: 200;
+      height: 150;
     }
 
     #line {
       width: 20%;
-      color: #000;
+      color: gold;
     }
 
     #welcome {
@@ -77,18 +76,78 @@
       background-color: white;
       color: black;
     }
+
+    #clg {
+      font-size: 45px;
+      margin-top: 0px
+    }
+
+    #add {
+      color: tan;
+      font-size: 20px;
+      margin-top: -20px;
+    }
+
+    @media screen and (max-width: 500px) {
+      #welcome {
+        font-size: 25px;
+        color: pink;
+        font-family: 'PT Serif', serif;
+      }
+      #logo {
+        height: 70px;
+        width: 70%;
+      }
+      #subtitle {
+        font-size: 20px
+      }
+      .button {
+        background-color: #4CAF50;
+        /* Green */
+        border: none;
+        color: white;
+        padding: 10px 25px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        -webkit-transition-duration: 0.4s;
+        /* Safari */
+        transition-duration: 0.4s;
+        cursor: pointer;
+      }
+      .button1 {
+        background-color: transparent;
+        color: white;
+        border: 2px solid white;
+      }
+
+      .button1:hover {
+        background-color: white;
+        color: black;
+      }
+      #clg {
+        font-size: 27px;
+      }
+      #add {
+        color: tan;
+        font-size: 10px;
+      }
+    }
   </style>
 </head>
 
 <body>
-  <span class="col-sm-3"></span>
-  <div class="col-sm-6">
-    <span class="row"></span>
+  <div id="bg">
     <center>
+      <p id="clg">Miracle Educational Society Group of Institutions</p>
+      <p id="add">Miracle City, Bhogapuram (M), Vizianagaram Dist. (A.P.)</p>
+
       <p id="welcome">Miracle School Of Management
         <br> Presents </p>
       <br>
-      <img src="images/a.png" height="150" width="100%" id="logo">
+      <img src="images/a.png" id="logo">
 
       <hr id="line">
       <p id="subtitle"> A national level management meet
@@ -97,13 +156,12 @@
       </p>
       <div style="display:inline;">
 
-        <button onclick="window.location='public/main.html'" class="button button1">Learn More</button>
-        <button onclick="window.location='public/regi.html'" class="button button1">Register Now</button>
+        <button onclick="window.location='/home'" class="button button1">Learn More</button>
+        <button onclick="window.location='/register'" class="button button1">Register Now</button>
 
       </div>
     </center>
   </div>
-  <span class="col-sm-3"></span>
 </body>
 
 </html>
